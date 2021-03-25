@@ -1,8 +1,6 @@
 SITE Pre-Work Submission
 Name: Karina Zhang
 
-<img src="https://github.com/kzhang01/SITE_Prework/walkthrough.gif"><br>
-
 
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
 
@@ -32,3 +30,6 @@ Name: Karina Zhang
 
    I noticed while testing my project that sometimes, the user will forget how many tones are supposed to play during the round and start clicking buttons early. Something I would want to implement if  I had the extra time would be a visual indicator to mark the period during which the user can make their guesses. I would also make it impossible to start clicking game buttons before the sequence has finished playing. Otherwise, users may start inputting their guesses, stop when they see that there was more to the sequence, and then restart their guesses, which immediately results in a wrong guess and discourages the player.
 I also started implementing the time limit for players’ guesses, only finishing up to the UI of the timer. Next steps would include connecting this to start counting down when the sequence is done playing, resetting when the user correctly clicks the last button in that given sequence or clicks the wrong button, and displaying a message when the user runs out of time and decrementing the number of guesses left.
+
+
+<img src="https://github.com/kzhang01/SITE_Prework/blob/glitch/walkthrough.gif"><br>
