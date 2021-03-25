@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <div id="gameHeader">
+      <h1>Hi there!</h1>
+    
+      <p>
+        Welcome to the game! Repeat back the pattern by pressing buttons.
+      </p>
+
+      
+
+      <button id="startBtn" onclick="startGame()">Start</button>
+      <button id="stopBtn" onclick="stopGame()" class="hidden">Stop</button>
+    </div>
+    
+    <div id="gameContainer">
+      <div id="info">
+        
+        <p id="strikes">
+          Tries left: <br/> 3
+        </p>
+        
+        <div id="countdownContainer">
+          <div id="countdown">
+            <div id="countdown-number"></div>
+            <svg>
+              <circle r="18" cx="20" cy="20"></circle>
+            </svg>
+          </div>
+        </div>
+        
+        
+      </div>
+      
+      <div id="gameButtonArea"></div>
+    </div>
+    
+    <script>
+      let gameButtonArea = document.getElementById("gameButtonArea");
+      // let colorsArray = ["#FFC6F3", "#FCCA8D", "#FFF385", "#A6F8A4", "#DFDFDF", "#A5FFF5", "#87C0F5", "#C0A1FE", "#F18C92"];
+      // let clickedColorsArray = ["#FF8BE6", "#FA931B", "#FFE70D", "#4CEF49", "#BEBEBE", "#4AFFE9", "#0C7FEA", "#8045FC", "#E21824"];
+      for (let i = 1; i < 10; i++) {
+        gameButtonArea.innerHTML += `<button id="button${i}" onclick="guess(${i})" onmousedown="startTone(${i})" onmouseup="stopTone()"></button>`;
+        // let currentButton = document.getElementById(`button${i}`);
+        // currentButton.style.backgroundColor = colorsArray[i-1];
+        // currentButton.addEventListener("click", function() {
+        //   currentButton.style["background-color"] = clickedColorsArray[i-1];
+        //   console.log(clickedColorsArray[i-1]);
+        //   console.log(i);
+        // }) 
+      } 
+      
+    </script>
+  </body>
+</html>
