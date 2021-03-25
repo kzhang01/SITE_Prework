@@ -1,14 +1,14 @@
-SITE Pre-Work Submission
+# SITE Pre-Work Submission
 Name: Karina Zhang
 
 
-1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
+1. **If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.**
 
    I consulted the website w3 schools for css syntax and for animating the start and stop buttons.
    
-2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
+2. **What was a challenge you encountered in creating this submission (be specific)? How did you overcome it?**
 
-   When I finished the main part of the project, I decided to add additional game buttons to increase the difficulty. I created nine buttons, but much of the work was repeated so I wanted to iteratively create the HTML and set the CSS styles. To make this a bit easier, I created a div with an id of “gameButtonArea” in which I could add each button using the following:
+   When I finished the main part of the project, I decided to add additional game buttons to increase the difficulty. I created nine buttons, but much of the work was repeated so I wanted to iteratively create the buttons. To make this a bit easier, I created a div with an id of “gameButtonArea” in which I could add each button using the following:
    ```JavaScript
    let gameButtonArea = document.getElementById("gameButtonArea");
    for (let i = 1; i < 10; i++) {
@@ -20,16 +20,16 @@ Name: Karina Zhang
    let currentButton = document.getElementById(`button${i}`);
    currentButton.style.backgroundColor = colorsArray[i-1];
    ```
-   This was successful in setting the default button colors, but now the active state colors did not show up when I clicked buttons or when a sequence was playing. After some research into this problem, I found that At this point, I wanted to focus my attention on implementing new functionalities into the project rather than optimizing this one area. I set the individual CSS styles for the buttons and used the time I saved to implement optional features such as increasing the speed the sequence is played at over time, using a random pattern, giving the player 3 strikes, and cleaning up the UI to make it responsive for screens of all different sizes.
+   This was successful in setting the default button colors, but now the active state colors did not show up when I clicked buttons or when a sequence was playing. At this point, I wanted to focus my attention on implementing new functionalities into the project rather than optimizing this one area. I set the individual CSS styles for the buttons and used the time I saved to implement optional features such as increasing the speed the sequence is played at over time, using a random pattern, giving the player 3 strikes, and cleaning up the UI to make it responsive for screens of all different sizes.
 
-3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)
+3. **What questions about web development do you have after completing your submission?**
 
    Through my struggles with setting CSS styles using JavaScript, I learned there are many different ways to accomplish the same result (or in my case, attempt to accomplish). One question I am left with after completing my submission is what are some of the best practices of web development. This project is also a very visual application and I am curious about how one goes about developing web pages to be more accessible. Finally, I am still searching for a solution to iteratively setting my buttons’ active state CSS. I am currently looking into CSS preprocessors such as SASS and LESS as potential solutions, but I still wonder how feasible it is to use JavaScript to accomplish this.
 
-4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
+4. **If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific.**
 
    I noticed while testing my project that sometimes, the user will forget how many tones are supposed to play during the round and start clicking buttons early. Something I would want to implement if  I had the extra time would be a visual indicator to mark the period during which the user can make their guesses. I would also make it impossible to start clicking game buttons before the sequence has finished playing. Otherwise, users may start inputting their guesses, stop when they see that there was more to the sequence, and then restart their guesses, which immediately results in a wrong guess and discourages the player.
 I also started implementing the time limit for players’ guesses, only finishing up to the UI of the timer. Next steps would include connecting this to start counting down when the sequence is done playing, resetting when the user correctly clicks the last button in that given sequence or clicks the wrong button, and displaying a message when the user runs out of time and decrementing the number of guesses left.
 
-
+## Project Walkthrough
 <img src="https://github.com/kzhang01/SITE_Prework/blob/glitch/walkthrough.gif"><br>
