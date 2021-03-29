@@ -41,6 +41,13 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 ![walkthrough](https://user-images.githubusercontent.com/41274792/112898927-79149280-90af-11eb-99cc-5dbe07f94643.gif)
 
+## Layout on different devices (Laptop L - 1440px, iPad, iPhone X):
+<p float=left>
+   <img src="https://user-images.githubusercontent.com/41274792/112901084-4c15af00-90b2-11eb-9100-c116afdc400a.png" height=342px alt="Laptop" >
+   <img src="https://user-images.githubusercontent.com/41274792/112901088-4e780900-90b2-11eb-9cae-01b5aaae6774.png" height=342px alt="iPad">
+   <img src="https://user-images.githubusercontent.com/41274792/112901096-5041cc80-90b2-11eb-8fb9-c675285137da.png" height=342px alt="iPhoneX">
+</p>
+
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
 
